@@ -1,0 +1,41 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    background-color: #f4f4f4; /* Light gray background color */
+}
+
+.container {
+    max-width: 800px; /* Maximum width of the container */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px; /* Padding around the content */
+    background: white; /* White background for the content area */
+    border-radius: 8px; /* Rounds the corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+h1 {
+    text-align: center; /* Centers the header */
+    color: #333; /* Dark gray color for the header */
+}
+
+.member {
+    border-bottom: 1px solid #ccc; /* Light gray border between members */
+    padding: 15px 0; /* Padding for each member section */
+}
+
+.member:last-child {
+    border-bottom: none; /* Removes border for the last member */
+}
+
+h2 {
+    color: #007BFF; /* Blue color for member names */
+}
+
+p {
+    color: #555; /* Medium gray color for additional info */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em; /* Adjusts header font size for small screens */

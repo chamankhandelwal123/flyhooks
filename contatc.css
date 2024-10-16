@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif; /* Sets the font for the entire page */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    background-color: #e9ecef; /* Light gray background color */
+}
+
+.container {
+    max-width: 800px; /* Maximum width of the container */
+    margin: 0 auto; /* Centers the container */
+    padding: 30px; /* Increased padding around the content */
+    background: white; /* White background for the content area */
+    border-radius: 12px; /* Rounds the corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+header {
+    text-align: center; /* Centers header content */
+    margin-bottom: 30px; /* Space below the header */
+}
+
+h1 {
+    color: #007BFF; /* Blue color for the main header */
+    font-size: 2.5em; /* Increased font size for main header */
+    margin-bottom: 10px; /* Space below the main header */
+}
+
+h2 {
+    color: #333; /* Dark gray for subheaders */
+    font-size: 1.8em; /* Increased font size for subheaders */
+    margin-top: 20px; /* Space above subheaders */
+    border-bottom: 2px solid #007BFF; /* Blue underline for subheaders */
+    padding-bottom: 10px; /* Padding below subheaders */
+}
+
+.contact-info {
+    margin-bottom: 20px; /* Space below contact info section */
+    font-size: 1.1em; /* Slightly larger font size for better readability */
+}
+
+.contact-info p {
+    margin-bottom: 15px; /* Space below each contact detail */
+    color: #555; /* Dark gray for paragraph text */
+}
+
+a {
+    color: #007BFF; /* Blue color for links */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold; /* Makes links bold */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Adjusts header font size for small screens */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjusts subheader font size for small screens */
+    }
+
+    p {
+        font-size: 0.9em; /* Adjusts paragraph font size for small screens */
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noise Pollution</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo"><i class="ri-home-3-fill"></i><span>FlyOx</span></a>
+        <ul class="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="dev.html">Developers</a></li>
+            <li><a href="survey.html">Survey</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="main">
+            <a href="sign.html" class="user"><i class="ri-user-line"></i>Sign In</a>
+            <a href="reg.html">Register</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+
+    </header>
+    <!-- Js Scrpit Link -->
+    <script src="scrpit.js" type="text/javascript"></script>
+
+    <!-- Navbar Completed -->
+
+    <!-- images slider -->
+    <div class="conatiner">
+        <div class="slider">
+            <div class="slides" style="--img: url('Images/img1.jpg')" id="img1">
+                <div class="content">
+                    <h4><a href="survey.html" style="color: white;" class="survey">Survey</a></h4>
+                    <p>In India, DJs at events contribute significantly to noise pollution, often exceeding legal
+                        limits, causing health issues and public disturbances. Regulatory actions are increasingly
+                        enforced to mitigate this problem​
+                    </p>
+                </div>
+            </div>
+
+            <div class="slides" style="--img: url('Images/img2.jpg')" id="img2">
+                <div class="content">
+                    <h4><a href="survey.html" style="text-decoration: none; color:#fff;" class="survey">Survey</a></h4>
+                    <p>During Diwali, fireworks contribute to severe noise pollution, often exceeding 120 dB, causing
+                        hearing damage, stress for people and animals, and air pollution from harmful particulate matter
+                        and toxic chemicals​
+                    </p>
+                </div>
+            </div>
+
+            <div class="slides" style="--img: url('Images/img3.avif')" id="img3">
+                <div class="content">
+                    <h4> <a href="survey.html" style="color: #fff;" class="survey">Survey</a></h4>
+                    <p>
+                        Noise pollution from traffic and flights significantly impacts urban areas, often exceeding safe
+                        limits of 85 dB. Prolonged exposure can lead to hearing loss, sleep disturbances, and increased
+                        stress levels​</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <span class="prev"></span>
+            <span class="next"></span>
+        </div>
+    </div>
+    <script>
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+        let slider = document.querySelector('.slider');
+
+        next.addEventListener('click', function () {
+            let slides = document.querySelectorAll('.slides');
+            slider.appendChild(slides[0]);
+        })
+
+        prev.addEventListener('click', function () {
+            let slides = document.querySelectorAll('.slides');
+            slider.prepend(slides[slides.length - 1]);
+
+        })
+    </script>
+
+</body>
+
+</html>

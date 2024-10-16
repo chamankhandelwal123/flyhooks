@@ -1,0 +1,107 @@
+/* styles.css */
+
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* Global styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Form container styling */
+.form-container {
+  background-color: #333; /* Darker background for the form */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px; /* Maximum width for the form */
+}
+
+/* Form header styling */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Input and textarea styling */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="radio"],
+input[type="checkbox"],
+textarea {
+  width: 100%; /* Full width */
+  padding: 10px;
+  margin: 8px 0 20px; /* Margin for spacing */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  background-color: #555; /* Darker input fields */
+  color: white; /* White text */
+}
+
+/* Radio button styling */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto; /* Auto width for radio and checkbox */
+  margin-right: 10px; /* Spacing between radio/checkbox and label */
+}
+
+/* Fieldset styling */
+fieldset {
+  border: 2px solid #4caf50; /* Green border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 15px;
+  margin-bottom: 20px; /* Margin for spacing */
+}
+
+/* Submit button styling */
+button {
+  background-color: #4caf50; /* Green button */
+  color: white; /* White text */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  button {
+    width: 100%; /* Full width for button on small screens */
+  }
+}

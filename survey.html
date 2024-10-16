@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noise Pollution Survey</title>
+  <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Noise Pollution Survey</h1>
+     
+    <form  name="submit-to-google-sheet">
+      <!-- Name -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+    
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    
+      <!-- Age -->
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+    
+      <!-- Sources of Noise Pollution -->
+      <fieldset>
+        <legend>Which of the following do you consider the main sources of noise pollution in your neighborhood? (Select up to 3)</legend>
+        <label>
+          <input type="checkbox" name="noise_sources" value="Traffic"> Traffic
+        </label>
+        <label>
+          <input type="checkbox" name="noise_sources" value="Construction"> Construction
+        </label>
+        <label>
+          <input type="checkbox" name="noise_sources" value="Loud music"> Loud Music
+        </label>
+        <label>
+          <input type="checkbox" name="noise_sources" value="Industrial noise"> Industrial Noise
+        </label>
+        <label>
+          <input type="checkbox" name="noise_sources" value="Neighbors"> Neighbors
+        </label>
+        <label>
+          <input type="checkbox" name="noise_sources" value="Other"> Other (please specify):
+          <input type="text" name="other_source">
+        </label>
+      </fieldset>
+    
+      <!-- Frequency of Noise Pollution -->
+      <fieldset>
+        <legend>How often do you experience noise pollution in your area?</legend>
+        <label>
+          <input type="radio" name="frequency" value="Daily" required> Daily
+        </label>
+        <label>
+          <input type="radio" name="frequency" value="Several times a week"> Several times a week
+        </label>
+        <label>
+          <input type="radio" name="frequency" value="Once a week"> Once a week
+        </label>
+        <label>
+          <input type="radio" name="frequency" value="Rarely"> Rarely
+        </label>
+        <label>
+          <input type="radio" name="frequency" value="Never"> Never
+        </label>
+      </fieldset>
+    
+      <!-- Time of Day -->
+      <fieldset>
+        <legend>At what times of day do you notice the most noise pollution?</legend>
+        <label>
+          <input type="radio" name="time_of_day" value="Morning" required> Morning
+        </label>
+        <label>
+          <input type="radio" name="time_of_day" value="Afternoon"> Afternoon
+        </label>
+        <label>
+          <input type="radio" name="time_of_day" value="Evening"> Evening
+        </label>
+        <label>
+          <input type="radio" name="time_of_day" value="Night"> Night
+        </label>
+        <label>
+          <input type="radio" name="time_of_day" value="All day"> All day
+        </label>
+      </fieldset>
+    
+      <!-- Level of Concern -->
+      <fieldset>
+        <legend>How concerned are you about noise pollution?</legend>
+        <label>
+          <input type="radio" name="concern_level" value="Very concerned" required> Very concerned
+        </label>
+        <label>
+          <input type="radio" name="concern_level" value="Somewhat concerned"> Somewhat concerned
+        </label>
+        <label>
+          <input type="radio" name="concern_level" value="Neutral"> Neutral
+        </label>
+        <label>
+          <input type="radio" name="concern_level" value="Not very concerned"> Not very concerned
+        </label>
+        <label>
+          <input type="radio" name="concern_level" value="Not concerned at all"> Not concerned at all
+        </label>
+      </fieldset>
+    
+      <!-- Impact on Daily Life -->
+      <fieldset>
+        <legend>How does noise pollution impact your daily life?</legend>
+        <label>
+          <input type="radio" name="impact" value="Significantly" required> Significantly
+        </label>
+        <label>
+          <input type="radio" name="impact" value="Moderately"> Moderately
+        </label>
+        <label>
+          <input type="radio" name="impact" value="Slightly"> Slightly
+        </label>
+        <label>
+          <input type="radio" name="impact" value="Not at all"> Not at all
+        </label>
+      </fieldset>
+    
+      <!-- Awareness of Noise Regulations -->
+      <fieldset>
+        <legend>Are you aware of any local regulations regarding noise pollution?</legend>
+        <label>
+          <input type="radio" name="awareness" value="Yes" required> Yes
+        </label>
+        <label>
+          <input type="radio" name="awareness" value="No"> No
+        </label>
+        <label>
+          <input type="radio" name="awareness" value="Unsure"> Unsure
+        </label>
+      </fieldset>
+    
+      <!-- Experience with Noise Complaints -->
+      <fieldset>
+        <legend>Have you ever filed a noise complaint?</legend>
+        <label>
+          <input type="radio" name="complaint" value="Yes" required> Yes
+        </label>
+        <label>
+          <input type="radio" name="complaint" value="No"> No
+        </label>
+      </fieldset>
+    
+      <!-- Effect on Health -->
+      <fieldset>
+        <legend>Do you believe that noise pollution affects your health?</legend>
+        <label>
+          <input type="radio" name="health_effect" value="Strongly agree" required> Strongly agree
+        </label>
+        <label>
+          <input type="radio" name="health_effect" value="Agree"> Agree
+        </label>
+        <label>
+          <input type="radio" name="health_effect" value="Neutral"> Neutral
+        </label>
+        <label>
+          <input type="radio" name="health_effect" value="Disagree"> Disagree
+        </label>
+        <label>
+          <input type="radio" name="health_effect" value="Strongly disagree"> Strongly disagree
+        </label>
+      </fieldset>
+    
+      <!-- Suggestions for Improvement -->
+      <fieldset>
+        <legend>What measures would you suggest to reduce noise pollution in your area?</legend>
+        <label>
+          <input type="checkbox" name="suggestions" value="Enforce stricter regulations"> Enforce stricter regulations
+        </label>
+        <label>
+          <input type="checkbox" name="suggestions" value="Community awareness programs"> Community awareness programs
+        </label>
+        <label>
+          <input type="checkbox" name="suggestions" value="Noise barriers"> Noise barriers
+        </label>
+        <label>
+          <input type="checkbox" name="suggestions" value="Limit construction hours"> Limit construction hours
+        </label>
+        <label>
+          <input type="checkbox" name="suggestions" value="Promote quieter vehicles"> Promote quieter vehicles
+        </label>
+        <label>
+          <input type="checkbox" name="suggestions" value="Other"> Other (please specify):
+          <input type="text" name="other_suggestion">
+        </label>
+      </fieldset>
+    
+      <!-- Overall Satisfaction -->
+      <fieldset>
+        <legend>Overall, how satisfied are you with the noise level in your neighborhood?</legend>
+        <label>
+          <input type="radio" name="satisfaction" value="Very satisfied" required> Very satisfied
+        </label>
+        <label>
+          <input type="radio" name="satisfaction" value="Satisfied"> Satisfied
+        </label>
+        <label>
+          <input type="radio" name="satisfaction" value="Neutral"> Neutral
+        </label>
+        <label>
+          <input type="radio" name="satisfaction" value="Dissatisfied"> Dissatisfied
+        </label>
+        <label>
+          <input type="radio" name="satisfaction" value="Very dissatisfied"> Very dissatisfied
+        </label>
+      </fieldset>
+    
+      <!-- Additional Comments -->
+      <label for="comments">Any additional comments or suggestions:</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments..."></textarea>
+    
+      <!-- Submit Button -->
+      <button type="submit">Submit Survey</button>
+      <div class="submitmessage">
+
+      </div>
+    </form>
+    
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbztE9j0th3MTu6v4_ygEAC4d8QIApzeylFk-Rmax4s2fZmTaNFvBngR-b0sisyCW8OH7g/exec'
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const ele =document.querySelector('.submitmessage');
+        ele.innerText="Submitting form please wait..."
+        
+        try {
+          const response = await fetch(scriptURL, { method: 'POST', body: new FormData(form) });
+          console.log('Success!', response);
+          window.location.href='./sucess.html'
+        } catch (e) {
+          console.log('Error!', e.message);
+        }
+      });
+      
+      
+    </script>
+    
+  </div>
+</body>
+</html>

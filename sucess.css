@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.success-message {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 20px 30px;
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease-in-out, slideIn 0.5s ease-in-out forwards;
+    max-width: 90%; /* Make it responsive */
+    margin: auto; /* Center align */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 28px; /* Default size for heading */
+    margin-bottom: 10px; /* Space below heading */
+    margin-left: 0;
+}
+
+p {
+    font-size: 18px; /* Default size for paragraph */
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+.go-back {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #fff; /* White background for button */
+    color: #4CAF50; /* Green text */
+    text-decoration: none; /* No underline */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold; /* Bold text */
+}
+
+.go-back:hover {
+    background-color: #4CAF50; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px; /* Smaller size on mobile */
+    }
+    p {
+        font-size: 16px; /* Smaller size for mobile */
+    }
+    .go-back {
+        padding: 8px 12px; /* Adjust button padding on mobile */
+    }
+}
