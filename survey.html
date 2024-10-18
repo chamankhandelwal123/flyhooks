@@ -231,7 +231,7 @@
       form.addEventListener('submit', async (e) => {
         e.preventDefault();
         const ele =document.querySelector('.submitmessage');
-        ele.innerText="Submitting form please wait..."
+        ele.innerText="Submitting plese wait.Don't tap again and again."
         
         try {
           const response = await fetch(scriptURL, { method: 'POST', body: new FormData(form) });
